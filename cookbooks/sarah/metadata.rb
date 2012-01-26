@@ -16,3 +16,8 @@ attribute "whatever",
   :description => "Nothing to see here",
   :required => "required",
   :recipes => ["sarah::setup_sarah"]
+
+attribute "rgeyer/someval",
+ :display_name => "Grouped Input",
+  :required => "required",
+   :recipes => ["rgeyer::setup_rgeyer"]

@@ -33,4 +33,6 @@ log "this is the value for whatever (#{node:[:whatever]})"
 
             log "See the content of node[:platform] is #{node[:platform]}"
 
+            log "The value with a forward slash in the attribute name is (#{node[:rgeyer][:someval]})"
+
             rs_utils_marker :end
