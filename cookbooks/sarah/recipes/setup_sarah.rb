@@ -29,6 +29,8 @@ if node[:platform] == 'centos'
             log "This is an Ubuntu box"
             end
 
+log "this is the value for whatever (#{node:[:whatever]})"
+
             log "See the content of node[:platform] is #{node[:platform]}"
 
             rs_utils_marker :end
