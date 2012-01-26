@@ -19,7 +19,7 @@ log "We would have installed #{package_name} if we provided that variable to a p
 log "whatever you want"
 ::Chef::Log.info("info")
 ::Chef::Log.warn("warn")
-::Chef::Log.debut("debug")
+::Chef::Log.debug("debug")
 
 package "tmux"
 
