@@ -10,3 +10,9 @@ depends "rs_utils"
 supports "ubuntu"
 
 recipe "sarah::setup_sarah", "This installs something."
+
+attribute "whatever",
+  :display_name => "Just some value",
+  :description => "Nothing to see here",
+  :required => "required",
+  :recipes => ["sarah::setup_sarah"]
