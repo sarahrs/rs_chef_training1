@@ -8,3 +8,12 @@
 #
 
 log "Hello, worlde!"
+
+
+directory "/tmp/something" do
+owner "root"
+group "root"
+mode 0755
+path "/tmp/somethingelse"
+action :create
+end
