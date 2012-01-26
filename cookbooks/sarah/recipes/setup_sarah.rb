@@ -9,7 +9,7 @@
 
 package_name = value_for_platform(
 "centos" => {"default" => "httpd"},
-"ubuntu" => {:default" => "apache2"}
+"ubuntu" => {"default" => "apache2"}
 )
 
 rs_utils_marker :begin
