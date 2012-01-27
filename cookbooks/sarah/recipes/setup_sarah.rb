@@ -17,9 +17,13 @@ rs_utils_marker :begin
 log "We would have installed #{package_name} if we provided that variable to a package provider."
 
 log "whatever you want"
-::Chef::Log.info("info")
-::Chef::Log.warn("warn")
-::Chef::Log.debug("debug")
+ruby_block "Show Chef log messages inline" do
+block do
+  ::Chef::Log.info("info")
+  ::Chef::Log.warn("warn")
+  ::Chef::Log.debug("debug")
+end
+end
 
 package "tmux"
 
